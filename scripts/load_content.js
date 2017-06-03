@@ -22,7 +22,7 @@ function loadContent(url, destino, qs) {
 		}
 	});
 }
-   function agregarPublicacion()
+function agregarPublicacion()
 {
     var contenido = document.getElementById('txt_buscar').value;
     loadContent('relleno.php','izq_contenedor','publicacion='+contenido);  
