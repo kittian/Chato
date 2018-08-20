@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>chato</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/side.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>asfas</h1>
+    <div class="row">
+        <div class="col-md-2" style="background-color: ;">
+            <div class="nav-side-menu">
+                <div class="brand">Logo</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+              
+                    <div class="menu-list">
+              
+                        <ul id="menu-content" class="menu-content collapse out">
+                            <li>
+                              <a href="#">
+                              <i class="fa fa-dashboard fa-lg"></i> Marco de trabajo
+                              </a>
+                            </li>
+
+                            <li  data-toggle="collapse" data-target="#products" class="collapsed"  onClick='REPLACE_IFRAME("felix2.html");'>
+                              <a href="#"><i class="fa fa-gift fa-lg"></i> lista felix </span></a>
+                            </li>
+
+                            <li data-toggle="collapse" data-target="#service" class="collapsed"  onClick='REPLACE_IFRAME("https://docs.google.com/forms/d/e/1FAIpQLSe_2WVD9Vv7wQGo4uumFIwIhLGjCZq5gSPBOPa_Jpwv_69iBA/viewform");'>
+                              <a href="#"><i class="fa fa-globe fa-lg"></i> formulario google </span></a>
+                            </li>  
+
+                            <li data-toggle="collapse" data-target="#new" class="collapsed">
+                              <a href="#"><i class="fa fa-car fa-lg"></i> cosa 3</span></a>
+                            </li>
+
+                             <li>
+                              <a href="#">
+                              <i class="fa fa-user fa-lg"></i> cosa 4
+                              </a>
+                              </li>
+
+                             <li>
+                              <a href="#">
+                              <i class="fa fa-users fa-lg"></i> cosa 5
+                              </a>
+                            </li>
+                        </ul>
+                 </div>
+            </div>
+        </div>
+        <div id="Container" class="col-md-10" style="background-color: ;height: 800px;">
+        </div>
+
+    </div>
+
+
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+    function REPLACE_IFRAME(val){
+        var MyContainer = document.getElementById('Container');
+        var MyIframe = '<iframe id="gmaps" width="100%" height="800" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="'+val+'"></iframe>'
+        MyContainer.innerHTML=MyIframe;
+    }
+</script>
+</body>
+</html>
